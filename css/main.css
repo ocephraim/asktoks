@@ -1,0 +1,110 @@
+/**----General Styles
+-------**/
+* {
+    box-sizing: border-box;
+}
+body {
+    font-size: 62.5%;
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffff;
+    background: #000000;
+    background-image: url(../assets/star_pattern.png);
+    background-repeat: repeat-y;
+    background-position: cover;
+}
+nav {
+    margin-top: 20px;
+}
+.sky img{
+    position: absolute;
+    margin: 0 auto;
+    top: 0%;
+    opacity: 0.9;
+    height: 400px;
+    width: 100%;
+    z-index: -1;
+}
+.logo img{
+    width: 200px;
+    float: right;
+    clear: both;
+}
+
+/* ----Section 
+-------------- */
+.main {
+    clear: both;
+}
+.main h3 {
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+}
+.main h5 {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    opacity: 0.8;
+    margin-top: 48px;
+}
+.xter {
+    margin-top: 32px;
+    transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
+}
+.xter:hover {
+    text-decoration: none;
+}
+.xter:hover .image {
+    transform: scale(1.1);
+}
+.xter:hover .label{
+    text-decoration: none;
+    color:#A52163;
+    font-weight: bolder;
+}
+.parents .image {
+    background: url(../assets/parent.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 320px;
+    transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
+}
+.professionals .image {
+    background: url(../assets/professional.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 320px;
+    transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
+}
+.everyone .image {
+    background: url(../assets/everyone_else.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 320px;
+    transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
+}
+.label {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 20px;
+    color: #f4f4f4;
+    transition-delay: 300ms;
+    transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
+}

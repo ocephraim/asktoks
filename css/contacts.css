@@ -1,0 +1,234 @@
+/**----General Styles
+-------**/
+* {
+    box-sizing: border-box;
+}
+body {
+    font-size: 62.5%;
+    font-family: 'Open Sans', sans-serif;
+    color: #212121;
+    background: #f9f9f9;
+    /* font-family: 'Montserrat', sans-serif; */
+}
+
+/**----Navbar
+-------**/
+nav {
+    margin-top: 10px;
+}
+.navbar-nav a {
+    font-size: 1em;
+    text-decoration: none;
+    color: #212121;
+    margin-right: 40px;
+    transition: all 0.5s ease-in;
+}
+.navbar-nav a:hover, .navbar-nav a.active{
+    color: #A52163;
+    font-weight: bolder;
+}
+.navbar img {
+    width: 200px;
+}
+@media (max-width: 480px) {
+    .navbar-nav a {
+        margin-right: 15px;
+        font-size: 0.8em;
+    }
+}
+
+/**----Section
+-------**/
+/* section {
+    height: 100vh;
+} */
+section h5 {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    border-bottom: 2px solid #A52163;
+   max-width: 12%;
+    padding-bottom: 3px;
+    margin: auto;
+    margin-top: 72px;
+}
+@media (max-width: 990px) {
+    .header {
+        font-size:12px;
+        max-width: 15%; 
+    }
+}
+@media (max-width: 510px) {
+    .header {
+        max-width: 20%; 
+    }
+}
+.main {
+    max-width: 800px;
+    margin: auto;
+}
+/**----Confideform
+-------**/
+.confide h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1.8em;
+    margin-top: 64px;
+}
+.form-group {
+    margin-top: 32px;
+}
+.form-group label {
+    font-size: 1.4em;
+}
+.form-group label.form-check {
+    padding-left: 0;
+}
+.form-control {
+    transition: all 0.5s ease-in;    
+    -webkit-transition: all 0.5s ease-in;
+    -moz-transition: all 0.5s ease-in;
+}
+.form-control:focus {
+    box-shadow: none;
+    border:1px solid rgb(245, 148, 198);
+}
+.form-group button {
+    float: right;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    padding: 8px 12px;
+    background-color: #fff;
+    color: #212121;
+    border: 1px solid #bbbbbb;
+    border-radius: 5px;
+    transition: all 0.3s ease-in;    
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+}
+.form-group button:hover {
+    background-color: #212121;
+    color: #fff;
+    box-shadow: 16px 12px 20px 
+    rgba(0, 0, 0, 0.1);
+
+}
+
+.vl {
+    border-left: 1px solid #bbbbbb;
+    height: 200px;
+    position: absolute;
+    left: -15%;
+    top: -3%;
+}
+
+/**----COntacts
+-------**/
+.talk {
+    position: relative;
+    margin-top: 20%;
+}
+.contacts {
+    font-size: 1.4em;
+    opacity: .7;
+}
+.contacts div {
+    margin-top: 10px;
+}
+.contacts div i {
+    margin-right: 12px;
+}
+.facebook, .facebook:hover i{
+    color: #385C8E;
+}
+.twitter, .twitter:hover i{
+    color: #03A9F4;
+}
+.linkedi, .linkedin:hover i{
+    color: #0E76A8;
+}
+.socials {
+    margin-top: 10px;
+}
+.socials a.media {
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    margin: auto;
+    border-radius: 50%;
+    margin-right:15px;
+    box-shadow: 10px 12px 30px
+     rgba(0, 0, 0, 0.15); 
+}
+.socials a i {
+    font-size: 1em;
+    vertical-align: -webkit-baseline-middle;
+    margin: auto;
+}
+.socials:hover a.media {
+    color: #212121;
+}
+@media (max-width: 765px) {
+    .talk {
+        display: none;
+    }
+}
+
+
+
+/**----Footer
+-------**/
+/**----Footer
+-------**/
+footer {
+    margin-top: 64px;
+    margin-bottom: 15px;
+}
+.copy {
+    display: flex;
+    display: -webkit-flex;
+    align-items: flex-end;
+    font-size: 1.4em;
+}
+.copy i, .copy span {
+    margin-right: 5px;
+    margin-bottom: 15px;
+}
+.copy img {
+    width: 120px;
+    margin-left: 10px;
+}
+.links > div {
+    float: right;
+    right: 0%;
+}
+.quicklinks, .contacts {
+    font-size: 1.1em;
+    opacity: .7;
+}
+.links p {
+    font-family: 'Montserrat', sans-serif;
+    opacity: 1;
+    font-weight: 500;
+    font-size: 1.3em;
+}
+.quicklinks a {
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #212121;
+}
+.quicklinks a:hover {
+    color: #A52163;
+    font-weight: bolder;
+}
+@media (max-width: 400px) {
+    .socials a.media {
+        margin-right: 6px;
+    }
+    .copy {
+        margin-top: 16px;
+    }
+}
