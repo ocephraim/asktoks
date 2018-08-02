@@ -88,6 +88,9 @@ section{
     .image {
         margin-top: 24px;
     }
+    #main {
+        padding-top: 24px;
+    }
     .label {
         margin-top: 10px;
     }
