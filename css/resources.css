@@ -22,6 +22,9 @@ nav {
     color: #212121;
     margin-right: 40px;
     transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
+    -moz-transition: all 0.5s ease-in;
+    -webkit-transition: all 0.5s ease-in;
 }
 .navbar-nav a:hover, .navbar-nav a.active{
     color: #A52163;
@@ -57,6 +60,8 @@ nav {
     color: #212121;
     margin-left: 40px;
     transition: all 0.5s ease-in;
+    -moz-transition: all 0.5s ease-in;
+    -webkit-transition: all 0.5s ease-in;
     border: none;
     max-width: 19%;
 }
@@ -97,6 +102,19 @@ nav {
     font-size: 18px;
     font-weight: 600;
     margin-top: 5px;
+}
+.card-header a {
+    text-decoration: none;
+    color: #212121;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.5s ease-in;
+    -moz-transition: all 0.5s ease-in;
+    -webkit-transition: all 0.5s ease-in;
+}
+.card-header a:hover, .card-header a:focus, .card-header a:active {
+    color: #A52163;
+    font-weight: bolder;
 }
 @media (max-width: 1000px) {
     .tab-pane {

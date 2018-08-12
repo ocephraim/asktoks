@@ -53,6 +53,29 @@ nav {
     -o-transition: all 0.3s ease-in;
     -webkit-transition: all 0.3s ease-in;
 }
+@media (max-width: 575px) {
+    .xter {
+        position: relative;
+        display: block;
+    }
+    .xter .image {
+        height: 200px;
+        opacity: 0.2;
+        z-index: -1;
+    }
+    .xter .label {
+        position: absolute;
+        left: 35%;
+        top: 45%;
+        z-index: 2;
+        background: #000000;
+        padding: 8px;
+        max-width: 100px;
+    }
+    .parents .label {
+        left: 42%;
+    }
+}
 .xter:hover {
     text-decoration: none;
 }
