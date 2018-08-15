@@ -16,85 +16,135 @@ body {
 nav {
     margin-top: 10px;
 }
-.logo img{
-    width: 200px;
-    float: right;
-    clear: both;
-}
-
-/* --Section-- */
-section{
-    clear: both;
-    height: 100vh;
-}
-#main {
-    display: flex;
-    display: -webkit-flex;
-    align-items: center;
-    flex-direction: row;
-}
-#main a {
+.navbar-nav a {
+    font-size: 1em;
     text-decoration: none;
-}
-.avatar {
-    background: url(../assets/parent.png) no-repeat;
-    background-size: contain;
-    background-position: center;
-    height: 400px;
-    /* margin-top: -60px; */
-}
-.image {
-    background: url(../assets/doorclosed.png) no-repeat;
-    background-size: contain;
-    background-position: center;
-    height: 250px;
-}
-
-.label {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.6em;
     color: #212121;
-    font-weight: 500;
-    transition: all 0.3s ease-in;
-    -moz-transition: all 0.3s ease-in;
-    -o-transition: all 0.3s ease-in;
-    -webkit-transition: all 0.3s ease-in;
-    transition-delay: 500ms;
-    -moz-transition-delay: 500ms;
-    -o-transition-delay: 500ms;
-    -webkit-transition-delay: 500ms;
-    margin-top: 28px;
+    margin-right: 40px;
+    transition: all 0.5s ease-in;
 }
-.explore:hover .image{
-    background: url(../assets/dooropen.png) no-repeat;
-    background-size: contain;
-    background-position: center;
-    height: 250px;
-    transition: all 0.3s ease-in;
-    -moz-transition: all 0.3s ease-in;
-    -o-transition: all 0.3s ease-in;
-    -webkit-transition: all 0.3s ease-in;
-}
-.explore:hover .label {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.6em;
+.navbar-nav a:hover, .navbar-nav a.active{
     color: #A52163;
     font-weight: bolder;
 }
-@media (max-width: 580px) {
-    .avatar {
+.navbar img {
+    width: 200px;
+}
+@media (max-width: 480px) {
+    .navbar-nav a {
+        margin-right: 15px;
+        font-size: 0.8em;
+    }
+}
+
+/**----Section
+-------**/
+.main {
+    max-width: 800px;
+    margin: auto;
+}
+.back {
+    text-decoration: none;
+}
+.back > div {
+    font-size: 1.2em;
+    color: #212121;
+    font-weight: 500;
+    display: inline-block;
+    transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+}
+.back:hover {
+    text-decoration: none;
+}
+.back:hover > div {
+    color: #A52163;
+}
+.back:hover div.arrow {
+    transform: translateX(-5px);
+    -moz-transform: translateX(-5px);
+    -webkit-transform: translateX(-5px);
+    transition-delay: 50ms;
+}
+.nav-tabs {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+    border: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 64px;
+    text-align: center;
+}
+
+.nav-tabs .nav-link {
+    border: none;
+    max-width: 20%;
+    text-decoration: none;
+    color: #212121;
+    transition: all 0.5s ease-in;
+    margin-left: 5px;
+}
+@media (max-width: 990px) {
+    .nav-tabs {
+        font-size: 0.85em;
+    }   
+}
+@media (max-width: 765px) {
+    .nav-tabs .nav-link {
+        font-size: 0.5em;
+        max-width: 70px;
+        text-align: center;
+    }
+}
+
+.nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus, .nav-tabs .nav-link:active, .nav-tabs .nav-link.active {
+    border: none;
+    border-bottom: 2px solid #A52163;
+    background: #f9f9f9;
+    color: #A52163;
+    font-weight: bolder;
+}
+.tab-content {
+    position: relative;
+}
+.tab-pane {
+    font-size: 1.4em;
+    line-height: 2;
+    max-width: 600px;
+    margin: auto;
+    margin-top: 32px;
+}
+.tab-pane h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 48px;
+}
+.tab-pane img {
+    float: right;
+} 
+@media (max-width: 1000px) {
+    .tab-pane {
+        font-size: 1.1em;
+    }
+}
+.vl {
+    border-left: 1px solid #bbbbbb;
+    height: 100%;
+    position: absolute;
+    right: 90%;
+}
+@media (max-width: 990px) {
+    .vl {
+        right: 97%;
+    }
+}
+@media (max-width: 765px) {
+    .vl {
         display: none;
     }
-    .image {
-        margin-top: 24px;
-    }
-    #main {
-        padding-top: 64px;
-    }
-    .label {
-        margin-top: 10px;
-    }
-    
 }
 
 
@@ -188,10 +238,5 @@ footer {
     }
     .copy {
         margin-top: 16px;
-    }
-}
-@media (max-width: 580px) {
-    footer {
-        margin-top: 64px;
     }
 }

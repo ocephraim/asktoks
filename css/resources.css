@@ -103,6 +103,9 @@ nav {
     font-weight: 600;
     margin-top: 5px;
 }
+.card {
+    margin-bottom: 1px;
+}
 .card-header a {
     text-decoration: none;
     color: #212121;
@@ -139,6 +142,23 @@ nav {
     .vl {
         display: none;
     }
+}
+.morelinks a {
+    padding: 8px 12px;
+    font: 600 10px 'Montserrat', sans-serif;
+    color: #212121;
+    text-decoration: none;
+    border: 1px solid #bbbbbb;
+    border-radius: 5px;
+    transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+}
+.morelinks a:hover {
+    background: #212121;
+    color: #bbbbbb;
+    text-decoration: none;
+    border: none;
 }
 
 /**----Footer
@@ -197,8 +217,11 @@ footer {
 .twitter, .twitter:hover i{
     color: #03A9F4;
 }
-.linkedi, .linkedin:hover i{
+.linkedin, .linkedin:hover i{
     color: #0E76A8;
+}
+.instagram, .instagram:hover i {
+    color: #000000;
 }
 .socials {
     margin-top: 10px;
@@ -210,21 +233,21 @@ footer {
     height: 30px;
     margin: auto;
     border-radius: 50%;
-    margin-right:10px;
+    margin-right:5px;
     box-shadow: 10px 12px 30px
      rgba(0, 0, 0, 0.15); 
 }
 .socials a i {
     font-size: 1em;
     vertical-align: -webkit-baseline-middle;
-    margin: auto;
+    margin: 7px auto 0;
 }
 .socials:hover a.media {
     color: #212121;
 }
 @media (max-width: 400px) {
     .socials a.media {
-        margin-right: 6px;
+        margin-right: 3px;
     }
     .copy {
         margin-top: 16px;
