@@ -53,6 +53,14 @@ nav {
 .resize {
     height: 150px;
 }
+.clickcard {
+    text-decoration: none;
+    color: #212121;
+}
+.clickcard:hover {
+    text-decoration: none;
+    color: #A52163;
+}
 .card {
     margin-top: 10px; 
 }
