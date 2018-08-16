@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
     <link rel="shortcut icon" href="../favicon.png" type="image/png"/>
-    <title>Home | AskToks.com</title>
+    <title>Home | askToks.com</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -95,14 +95,40 @@
                 <div class="col-sm-5 volunteer">
                     <h3>Volunteer With Us</h3>
                     <p>We could not operate our advocacy campaigns without volunteers like you. Volunteering at asktoks.com involves becoming part of a loving community that makes a difference. Download our volunteer handbook and join us today</p>
-                    <div><a href="">VOLUNTEER</a></div>
+                    <div><a href="https://docs.google.com/presentation/d/1Ayfta2Yt-V8fLBReG02HtlyWgLz_PmY73drsSkdDVPM/export/pdf?id=1Ayfta2Yt-V8fLBReG02HtlyWgLz_PmY73drsSkdDVPM&pageid=p10" target="_blank">VOLUNTEER</a></div>
                 </div><!--volunteer-->
                 <div class="vl">
                 </div><!--vertical_line-->
                 <div class="col-sm-5 donations">
                     <h3>We Accept Donations</h3>
                     <p>Donations portal coming soon.  In the meantime please give us a call to make a donation.</p>
-                    <div><a href="">DONATE</a></div>                    
+                    <div><a data-toggle="modal" href="#donatemodal">DONATE</a></div>
+                    <div class="modal fade" id="donatemodal">
+                        <div class="modal-dialog">
+                            <div class="modal-content contacts opaque">
+                                <div class="modal-header">
+                                    <h3>Please give us a call to make a donation</h3>
+                                    <button type="button" class="close" data-dismiss="modal">
+                                        <span>&times;</span>
+                                    </button>
+                                </div><!--modal-header-->
+                                <div class="modal-body">
+                                    <div class="phone">
+                                        <i class="fas fa-mobile-alt"></i><span>08091116582</span>
+                                    </div><!--phone-->
+                                    <div class="address">
+                                        <i class="fas fa-envelope"></i><span>3, George Enenmoh close, Lekki, Lagos.</span>
+                                    </div><!--address-->
+                                    <div class="mail">
+                                        <i class="fas fa-at"></i><span>info@asktoks.com</span>
+                                    </div><!--mail-->
+                                </div><!--modal-body-->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Back</button>
+                                </div><!--modal-footer-->
+                            </div><!--modal-content-->
+                        </div><!--modal-dialog-->
+                    </div><!--modal-->
                 </div><!--donations-->
             </div><!--support-->
         </section><!--support_us-->

@@ -243,6 +243,10 @@ footer {
     font-size: 1.1em;
     opacity: .7;
 }
+.opaque {
+    opacity: 1;
+    font-size: 1.4em;
+}
 .links p {
     font-family: 'Montserrat', sans-serif;
     opacity: 1;
