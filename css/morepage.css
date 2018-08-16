@@ -41,7 +41,7 @@ nav {
 -------**/
 .main {
     max-width: 800px;
-    margin: auto;
+    margin: 64px auto;
 }
 .back {
     text-decoration: none;

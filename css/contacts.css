@@ -50,7 +50,7 @@ section h5 {
    max-width: 12%;
     padding-bottom: 3px;
     margin: auto;
-    margin-top: 72px;
+    margin-top: 64px;
 }
 @media (max-width: 990px) {
     .header {

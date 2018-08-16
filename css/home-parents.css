@@ -23,17 +23,16 @@ nav {
 }
 
 /* --Section-- */
-section{
-    clear: both;
-    height: 100vh;
-}
-#main {
+.main {
+    clear: both;    
+    padding-top: 64px;
+    padding-bottom: 64px;
     display: flex;
     display: -webkit-flex;
     align-items: center;
     flex-direction: row;
 }
-#main a {
+.main a {
     text-decoration: none;
 }
 .avatar {
@@ -88,8 +87,9 @@ section{
     .image {
         margin-top: 24px;
     }
-    #main {
+    .main {
         padding-top: 64px;
+        padding-bottom: 64px;
     }
     .label {
         margin-top: 10px;
@@ -190,8 +190,4 @@ footer {
         margin-top: 16px;
     }
 }
-@media (max-width: 580px) {
-    footer {
-        margin-top: 64px;
-    }
-}
+

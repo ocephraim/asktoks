@@ -45,10 +45,7 @@ nav {
 .main {
     margin-top: 96px;
     max-width: 900px;
-    margin: auto;
-}
-.network {
-    margin-top: 96px;
+    margin: 64px auto;
 }
 .resize {
     height: 150px;
