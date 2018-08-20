@@ -80,6 +80,22 @@ nav {
     color: #A52163;
     font-weight: bolder;
 }
+.portal:hover .image {
+    background: url(../assets/lock.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 250px;
+    transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
+}
+.portal:hover .label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6em;
+    color: #212121;
+    opacity: 0.7;
+}
 @media (max-width: 580px) {
     .avatar {
         display: none;

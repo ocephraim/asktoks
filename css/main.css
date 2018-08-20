@@ -54,13 +54,21 @@ nav {
     -webkit-transition: all 0.3s ease-in;
 }
 @media (max-width: 575px) {
+    .main h3 {
+        font-size: 18px; 
+        padding-top: 40px;
+    }
+    .main h5 {
+        font-size: 14px;
+        margin-top: 24px;
+    }
     .xter {
         position: relative;
         display: block;
     }
     .xter .image {
         height: 200px;
-        opacity: 0.4;
+        opacity: 0.7;
         z-index: -1;
     }
     .xter .label {
