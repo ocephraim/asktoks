@@ -102,6 +102,7 @@ nav {
     }
     .image {
         margin-top: 24px;
+        height: 170px;
     }
     .main {
         padding-top: 64px;
@@ -109,6 +110,7 @@ nav {
     }
     .label {
         margin-top: 10px;
+        font-size: 1.4em;
     }
     
 }
