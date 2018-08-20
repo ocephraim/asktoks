@@ -80,7 +80,7 @@ nav {
     color: #A52163;
     font-weight: bolder;
 }
-.portal:hover .image {
+.portal:hover .image, .portal:active .image, .portal:focus .image {
     background: url(../assets/lock.png) no-repeat;
     background-size: contain;
     background-position: center;
