@@ -114,24 +114,14 @@ nav {
     }
     .explore:hover .image{
         height: 170px;
-        transition: all 0.3s ease-in;
-        -moz-transition: all 0.3s ease-in;
-        -o-transition: all 0.3s ease-in;
-        -webkit-transition: all 0.3s ease-in;
     }
     .portal:hover .image, .portal:active .image, .portal:focus .image {
         height: 170px;
-        transition: all 0.3s ease-in;
-        -moz-transition: all 0.3s ease-in;
-        -o-transition: all 0.3s ease-in;
-        -webkit-transition: all 0.3s ease-in;
-    }
-    
+    }   
 }
 
 
-/**----Footer
--------**/
+/**Footer**/
 footer {
     margin-top: 64px;
     margin-bottom: 15px;
