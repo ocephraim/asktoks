@@ -33,6 +33,14 @@ nav {
 .navbar img {
     width: 200px;
 }
+@media (max-width: 1000px) {
+    .navbar-nav a {
+        font-size: 1em;
+    }
+    .navbar img{
+        width: 120px;
+    }
+}
 @media (max-width: 480px) {
     .navbar-nav a {
         margin-right: 15px;
@@ -47,73 +55,115 @@ nav {
     max-width: 900px;
     margin: 64px auto;
 }
+.head {
+    font-size: 1.4em;
+    margin-bottom: 64px;
+    text-align: center;
+}
 .resize {
     height: 150px;
 }
 .clickcard {
     text-decoration: none;
     color: #212121;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.profile {
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    flex-direction: column;
+    align-items: center;
 }
 .clickcard:hover {
     text-decoration: none;
     color: #A52163;
 }
-.card {
-    margin-top: 10px; 
+.profileimg {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin-bottom: 20px;
 }
-.card-header {
-    background: none;
+.mstoksimg {
+    background: url(../assets/mstoks.jpg)no-repeat;
+    background-size: cover;
 }
-.card-title {
+.helenimg {
+    background: url(../assets/helen.jpg)no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.olayinkaimg {
+    background: url(../assets/olayinka.jpg)no-repeat;
+    background-size: cover;
+}
+.patriciaimg {
+    background: url(../assets/patricia.jpg)no-repeat;
+    background-size: cover;
+}
+.profiletitle {
     font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
+    font-size: 1.4em;
     font-weight: 600;
 }
-.card-subtitle {
-    font-size: 12px;
+@media (max-width: 424px) {
+    .profileimg {
+        width: 90px;
+        height: 90px;
+    }
+    .profiletitle {
+        font-size: 1.2em;
+    }
 }
-.card-text {
-    font-size: 1.2em;
-    line-height: 1.8;
-}
-.card-link {
-    font-size: 1.2em;
-    font-weight: 600
+.modal {
+    color: #212121;
 }
 .title h3 {
     display: block;
     font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
+    font-size: 1.6em;
 }
 .subtitle {
-    font-size: 14px;
+    font-size: 1.2em;
     line-height: 1.6;
     margin-bottom: 16px;
     font-weight: 600;
+}
+.modal-body {
+    text-align: left;
 }
 .modal-body p {
     font-size: 1.2em;
     line-height: 1.8;
 }
+.landpage {
+    height: 95px;
+    position: sticky;
+    float: right;
+    bottom: 20px;
+}
 /**----Footer
 -------**/
 footer {
     margin-top: 64px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+}
+.foot {
+    margin: auto;
 }
 .copy {
     display: flex;
     display: -webkit-flex;
-    align-items: flex-end;
+    flex-direction: column;
+    justify-content: space-between;
     font-size: 1.4em;
-}
-.copy i, .copy span {
-    margin-right: 5px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 .copy img {
     width: 120px;
-    margin-left: 10px;
 }
 .links > div {
     float: right;

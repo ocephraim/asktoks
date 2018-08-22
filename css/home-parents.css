@@ -21,6 +21,11 @@ nav {
     float: right;
     clear: both;
 }
+@media (max-width: 1000px) {
+    .logo img{
+        width: 120px;
+    }
+}
 
 /* --Section-- */
 .main {
@@ -119,26 +124,33 @@ nav {
         height: 170px;
     }   
 }
+.landpage {
+    height: 95px;
+    position: sticky;
+    float: right;
+    bottom: 20px;
+}
 
 
-/**Footer**/
+/**----Footer
+-------**/
 footer {
     margin-top: 64px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+}
+.foot {
+    margin: auto;
 }
 .copy {
     display: flex;
     display: -webkit-flex;
-    align-items: flex-end;
+    flex-direction: column;
+    justify-content: space-between;
     font-size: 1.4em;
-}
-.copy i, .copy span {
-    margin-right: 5px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 .copy img {
     width: 120px;
-    margin-left: 10px;
 }
 .links > div {
     float: right;

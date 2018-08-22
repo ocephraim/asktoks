@@ -8,6 +8,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     color: #212121;
     background: #f9f9f9;
+    position: relative
     /* font-family: 'Montserrat', sans-serif; */
 }
 
@@ -29,6 +30,14 @@ nav {
 }
 .navbar img {
     width: 200px;
+}
+@media (max-width: 1000px) {
+    .navbar-nav a {
+        font-size: 1em;
+    }
+    .navbar img{
+        width: 120px;
+    }
 }
 @media (max-width: 480px) {
     .navbar-nav a {
@@ -164,7 +173,7 @@ nav {
     h3.header {
         font-size: 14px;
         text-align: center;
-        width: 20%;
+        max-width: 20%;
     }
 }
 .support {
@@ -200,7 +209,8 @@ nav {
     color: #212121;
     text-decoration: none;
     border: 1px solid #bbbbbb;
-    border-radius: 5px;transition: all 0.3s ease-in;
+    border-radius: 5px;
+    transition: all 0.3s ease-in;
     -webkit-transition: all 0.3s ease-in;
     -moz-transition: all 0.3s ease-in;
 }
@@ -210,30 +220,61 @@ nav {
     border: none;
     transform: scale(1.1);
 }
+.handbook {
+    text-align: center;
+}
+.handbook img {
+    height: 170px;
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+}
+.handbook a {
+    float: none;
+    font-size: 1.2em;
+    padding: 0;
+    border: none;
+    color: #212121;
+    transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+}
+.handbook a:hover {
+    background: none;
+    color: #A52163;
+    transform: none;
+    text-decoration: underline;
+}
 .vl {
     border-left: 1px solid #bbbbbb;
     margin-left: 2px;
-} 
+}
+.landpage {
+    height: 95px;
+    position: sticky;
+    float: right;
+    bottom: 20px;
+}
 
 /**----Footer
 -------**/
 footer {
     margin-top: 64px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+}
+.foot {
+    margin: auto;
 }
 .copy {
     display: flex;
     display: -webkit-flex;
-    align-items: flex-end;
+    flex-direction: column;
+    justify-content: space-between;
     font-size: 1.4em;
-}
-.copy i, .copy span {
-    margin-right: 5px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 .copy img {
     width: 120px;
-    margin-left: 10px;
 }
 .links > div {
     float: right;

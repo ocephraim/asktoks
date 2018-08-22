@@ -30,6 +30,14 @@ nav {
 .navbar img {
     width: 200px;
 }
+@media (max-width: 1000px) {
+    .navbar-nav a {
+        font-size: 1em;
+    }
+    .navbar img{
+        width: 120px;
+    }
+}
 @media (max-width: 480px) {
     .navbar-nav a {
         margin-right: 15px;
@@ -146,27 +154,33 @@ nav {
         display: none;
     }
 }
+.landpage {
+    height: 95px;
+    position: sticky;
+    float: right;
+    bottom: 20px;
+}
 
 
 /**----Footer
 -------**/
 footer {
     margin-top: 64px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+}
+.foot {
+    margin: auto;
 }
 .copy {
     display: flex;
     display: -webkit-flex;
-    align-items: flex-end;
+    flex-direction: column;
+    justify-content: space-between;
     font-size: 1.4em;
-}
-.copy i, .copy span {
-    margin-right: 5px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 .copy img {
     width: 120px;
-    margin-left: 10px;
 }
 .links > div {
     float: right;
