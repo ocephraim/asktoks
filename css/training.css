@@ -59,6 +59,9 @@ nav {
     font-size: 20px;
     margin-bottom: 64px;
 }
+.doc {
+    margin-bottom: 50px;
+}
 .docimg {
     padding-bottom: 10px;
     height: 100px;
