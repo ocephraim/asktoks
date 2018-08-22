@@ -56,7 +56,7 @@ nav {
 }
 .main h3 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
+    font-size: 1.6em;
     margin-bottom: 64px;
 }
 .doc {
@@ -67,7 +67,7 @@ nav {
     height: 100px;
 }
 .doctitle {
-    padding-bottom: 10px;
+    padding-bottom: 5px;
     font-size: 16px;
 }
 .doclink {
