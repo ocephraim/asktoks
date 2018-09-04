@@ -19,7 +19,16 @@
                       <div class="order-1 order-md-0 navbar-nav navbar-expand ">
                           <a href="home-professionals.html">HOME</a>
                           <a href="aboutus.html">ABOUT US</a>
-                          <a href="resources.html">RESOURCES</a>
+                          <div class="dropdown">
+                              <a href="#" id="drop">
+                                  RESOURCES
+                                  <i class="fas fa-caret-down"></i>
+                              </a>
+                              <div class="dropdown-content">
+                                  <a href="resources.html" class="dropdown-item">INFORMATION</a>
+                                  <a href="training-materials.html" class="dropdown-item">TRAINING</a>
+                              </div><!--dropdown-content--->
+                          </div><!--dropdown--->
                           <a href="gallery.html">GALLERY</a>
                           <a href="contacts.html" class="active">CONTACT</a>
                       </div><!--navbar-nav-->
@@ -135,6 +144,13 @@
             <img class="landpage" src="../assets/professional.png" alt="back_to_home">
         </a>  
 </body>
+<script>
+    $(document).ready(function(){
+        $ ('#drop').click(function(event) {
+            event.preventDefault();
+        })
+    });
+</script>
 <script src="https://wzrd.in/standalone/formdata-polyfill"></script>
 <script src="https://wzrd.in/standalone/promise-polyfill@latest"></script>
 <script src="https://wzrd.in/standalone/whatwg-fetch@latest"></script> 

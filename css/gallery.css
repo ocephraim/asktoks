@@ -26,6 +26,26 @@ nav {
     -moz-transition: all 0.5s ease-in;
     -webkit-transition: all 0.5s ease-in;
 }
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #fafafa;
+    border-radius: 3px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0,0.05);
+    z-index: 1;
+}
+.dropdown-content a {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    display: block;
+}
+.dropdown:hover .dropdown-content, .dropdown:active .dropdown-content, .dropdown:focus .dropdown-content {
+    display: block;
+}
 .navbar-nav a:hover, .navbar-nav a.active{
     color: #A52163;
     font-weight: bolder;
