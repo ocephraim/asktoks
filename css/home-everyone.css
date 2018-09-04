@@ -55,28 +55,58 @@ nav {
     justify-content: space-around;
     margin-bottom: 64px;
 }
-
-.arms > div.content {
-    border: 1px solid rgba(241, 184, 213, 0.5);
-    padding: 16px;
-    margin-top: 10px;
-    max-width: 260px;
+.avatar {
+    background: url(../assets/everyone_else.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 400px;
+}
+.content {
     position: relative;
-    display: flex;
-    display: -webkit-flex;
-    flex-direction: column;
-    justify-content: space-around;
+}
+.services {
+    width:200px;
+    height: 200px;
+    border-radius: 50%;
+    text-align: center;
+}
+.info {
+    margin-top: 30px;
+}
+.treatment {
+    position: absolute;
+    bottom: 5%;
+    box-shadow: 0 30px 50px 0 rgba(67, 165, 33, 0.15);
+}
+.training {
+    position: absolute;
+    top: 5%;
+    left: 25%;
+    box-shadow: 0 30px 50px 0 rgba(165, 33, 33, 0.1);
+}
+.information {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    box-shadow: 0 30px 50px 0 rgba(165, 33, 99, 0.1);
+}
+.management {
+    position: absolute;
+    top: 0;
+    left: 75%;
+    box-shadow: 0 30px 50px 0 rgba(44, 33, 165, 0.1);
 }
 .treatment h3, .training h3, .information h3, .management h3 {
-    font-size: 14px;
+    font-size: 1.4em;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     padding-bottom: 5px;
-    max-width: 70%;
+    max-width: 50%;
+    margin: auto;
 }
 
 .treatment h3{
-    border-bottom: 2px solid #43A521;
+    border-bottom: 2px solid #43a521;
 }
 .training h3{
     border-bottom: 2px solid #A52121;
@@ -88,36 +118,84 @@ nav {
     border-bottom: 2px solid #2C21A5;
 }
 .treatment h5, .training h5, .information h5, .management h5 {
-    font-size: 14px;
+    font-size: 1.4em;
     font-weight: 600;
     line-height: 1.6;
-    margin-top: 16px;
-}
-.treatment p, .training p, .information p, .management p {
-    font-size: 14px;
-    opacity: 0.8;
-    line-height: 1.6;
-    margin-top: 8px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 162px;
 }
 .treatment a, .training a, .information a, .management a {
-    float: right;
-    padding: 8px 12px;
-    font: 600 10px 'Montserrat', sans-serif;
+    font: 600 1.1em 'Montserrat', sans-serif;
+    color: #A52163;
+    text-decoration: none;
+    transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+}.treatment a:hover, .training a:hover, .information a:hover, .management a:hover {
     color: #212121;
     text-decoration: none;
-    border: 1px solid #bbbbbb;
-    border-radius: 5px;
-    margin-top: 16px;
-    transition: all 0.3s ease-in;
-    -webkit-transition: all 0.3s ease-in;
-    -moz-transition: all 0.3s ease-in;
 }
-.treatment, .training, .information, .management {
-    transition: all 0.3s ease-in;
-    -webkit-transition: all 0.3s ease-in;
-    -moz-transition: all 0.3s ease-in;
+@media (max-width: 1000px) {
+    .services {
+        width: 150px;
+        height: 150px;
+    }
+    .treatment h3, .training h3, .information h3, .management h3 {
+        font-size: 1.1em;
+    }
+    .treatment h5, .training h5, .information h5, .management h5 {
+        font-size: 1.1em;
+        max-width: 125px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
 }
-.treatment:hover {
+@media (max-width:767px) {
+    .avatar {
+        display: none;
+    }
+    .arms {
+        margin-bottom: 64px;
+    }
+    .content {
+        margin-top: 104px;
+        margin-bottom:104px;
+    }
+}
+@media (max-width: 490px) {
+    .services {
+        width: 120px;
+        height: 120px;
+    }
+    .treatment h3, .training h3, .information h3, .management h3 {
+        font-size: 0.9em;
+    }
+    .treatment h5, .training h5, .information h5, .management h5 {
+        font-size: 0.9em;
+        max-width: 105px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .treatment a, .training a, .information a, .management a {
+        font-size: 0.7em;
+    }
+    .content {
+        margin-left: 20%;
+        margin-top: -20px;
+        margin-bottom: -20px;
+    }
+    .content > div {
+        float: left;
+        margin-right: 7px;
+        margin-bottom: 24px;
+    }
+    .management, .information, .training, .treatment {
+        position: static;
+    }
+}
+/* .treatment:hover {
     background: #43A521;
     color: white;
     border: none;
@@ -149,7 +227,7 @@ nav {
     transform: scale(1.1);
     text-decoration: none;
     border: none;
-}
+} */
 .news {
     display: none;
 }
