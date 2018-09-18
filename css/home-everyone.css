@@ -76,25 +76,25 @@ nav {
 .treatment {
     position: absolute;
     bottom: 5%;
-    box-shadow: 0 30px 50px 0 rgba(67, 165, 33, 0.15);
+    box-shadow: 0 30px 50px 0 rgba(67, 165, 33, 0.05);
 }
 .training {
     position: absolute;
     top: 5%;
     left: 25%;
-    box-shadow: 0 30px 50px 0 rgba(165, 33, 33, 0.1);
+    box-shadow: 0 30px 50px 0 rgba(165, 33, 33, 0.05);
 }
 .information {
     position: absolute;
     bottom: 0;
     left: 50%;
-    box-shadow: 0 30px 50px 0 rgba(165, 33, 99, 0.1);
+    box-shadow: 0 30px 50px 0 rgba(165, 33, 99, 0.05);
 }
 .management {
     position: absolute;
     top: 0;
     left: 75%;
-    box-shadow: 0 30px 50px 0 rgba(44, 33, 165, 0.1);
+    box-shadow: 0 30px 50px 0 rgba(44, 33, 165, 0.05);
 }
 .treatment h3, .training h3, .information h3, .management h3 {
     font-size: 1.4em;
@@ -181,15 +181,17 @@ nav {
     .treatment a, .training a, .information a, .management a {
         font-size: 0.7em;
     }
-    .content {
-        margin-left: 20%;
-        margin-top: -20px;
-        margin-bottom: -20px;
-    }
+    
     .content > div {
         float: left;
         margin-right: 7px;
         margin-bottom: 24px;
+    }
+    .content {
+        clear: both;
+        margin-left: 10%;
+        margin-top: -20px;
+        margin-bottom: -20px;
     }
     .management, .information, .training, .treatment {
         position: static;
@@ -248,6 +250,12 @@ nav {
     margin-bottom: 16px;
 }
 @media (max-width: 575px) {
+    .volunteer h3, .donations h3 {
+        font-size: 1.6em;
+    }
+    .volunteer p, .donations p {
+        font-size: 1.2em;
+    }
     .donations {
         margin-top: 32px;
     }

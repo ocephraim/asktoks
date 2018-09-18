@@ -133,6 +133,12 @@ nav {
     transform: scale(1.1);
 }
 @media (max-width: 575px) {
+    .tutorials h3, .network h3 {
+        font-size: 1.6em;
+    }
+    .tutorials p, .network p {
+        font-size: 1.4em;
+    }
     .network {
         margin-top: 32px;
     }
