@@ -66,19 +66,17 @@ nav {
         width: 150px;
     }
     .main h3 {
-        font-size: 1.8em; 
-        padding-top: 32px;
+        font-size: 1.6em; 
+        padding-top: 16px;
     }
     .main h5 {
-        font-size: 1.4em;
-        margin-top: 48px;
+        font-size: 1.2em;
+        margin-top: 32px;
     }
     .xter {
         position: relative;
         display: block;
-    }
-    .xter .image {
-        height: 200px;
+        margin-top: 64px;
     }
     #user1 {
         display: block;
@@ -144,7 +142,7 @@ nav {
 }
 @media (max-width: 575px) {
     .xter .image {
-        height: 200px;
+        height: 250px;
     }
     /* .xter .image {
         height: 200px;
