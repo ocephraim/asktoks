@@ -146,4 +146,22 @@ nav {
     .parents .image, .professionals .image, .everyone .image {
         height: 270px;
     }
+    .xter .image {
+        height: 200px;
+        opacity: 0.7;
+        z-index: -1;
+    }
+    .xter .label {
+        position: absolute;
+        left: 35%;
+        top: 37%;
+        font-size: 1.4em;
+        z-index: 2;
+        background: #000000;
+        padding: 8px;
+        max-width: 120px;
+    }
+    .parents .label {
+        left: 42%;
+    } 
 }
