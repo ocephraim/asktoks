@@ -21,8 +21,8 @@ body::before {
     background-image: linear-gradient(rgba(0,0, 0, 0.3), rgba(0, 0, 0, 0.7));
     z-index: -1;
 }
-html {
-    height: 100%;
+html, body {
+    height: 100vh;
 }
 nav {
     margin-top: 20px;
@@ -61,11 +61,11 @@ nav {
 }
 @media (max-width: 575px) {
     .main h3 {
-        font-size: 18px; 
-        padding-top: 40px;
+        font-size: 1.8em; 
+        padding-top: 32px;
     }
     .main h5 {
-        font-size: 14px;
+        font-size: 1.4em;
         margin-top: 48px;
     }
     .xter {
@@ -136,4 +136,9 @@ nav {
     -moz-transition: all 0.3s ease-in;
     -o-transition: all 0.3s ease-in;
     -webkit-transition: all 0.3s ease-in;
+}
+@media (max-width: 575px) {
+    .parents .image, .professionals .image, .everyone .image {
+        height: 270px;
+    }
 }
