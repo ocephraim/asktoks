@@ -124,6 +124,18 @@ nav {
     background: url(../assets/patricia.jpg)no-repeat;
     background-size: cover;
 }
+.remilekunimg {
+    background: url(../assets/remilekun.jpeg)no-repeat;
+    background-size: cover; 
+}
+.akindayomiimg {
+    background: url(../assets/akindayomi.jpg)no-repeat;
+    background-size: cover; 
+}
+.dorisimg {
+    background: url(../assets/doris.jpg)no-repeat;
+    background-size: cover; 
+}
 .profiletitle {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.4em;
