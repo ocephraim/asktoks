@@ -141,6 +141,11 @@ nav {
     font-size: 1.4em;
     font-weight: 600;
 }
+.profilesubtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em;
+    line-height: 1.6;
+}
 @media (max-width: 424px) {
     .profileimg {
         width: 90px;
@@ -148,6 +153,10 @@ nav {
     }
     .profiletitle {
         font-size: 1.2em;
+    }
+    .profilesubtitle {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1em;
     }
 }
 .modal {
